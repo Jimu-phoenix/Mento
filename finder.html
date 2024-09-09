@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finder</title>
+    <link rel="stylesheet" href="f-style.css">
+</head>
+<body>
+    
+    <nav id="navigation">
+        <div class="logo">
+            <img src="Images/MENTO.png" alt="">
+        </div>
+        
+            <div class="nav-items" id="menuitems">
+                <a href="index.html" >Home</a> 
+                <a href="/" id="tab">Finder</a> 
+                <!-- <a href="/html/mento-register.html">Sign-Up</a>  -->
+                <a href="/">About</a> 
+            </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="search" id="searcher">
+            <input type="text" id="location" placeholder="Location">
+            <button id="search-btn">search</button>
+        </div>
+
+        <div class="food-box">
+            <h1>Restaurants Near You</h1>
+
+            <!-- ----------BOXES------------------------------- -->
+            <div class="boxes" id="boxes_grp">
+
+                <div class="boxes-list">
+
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+                    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+        
+    
+                </div>
+
+
+<!-- -----------------------List 2-------------------------------- -->
+
+                <div class="boxes-list">
+
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+                    
+                    <div class="result-box">
+                        <div class="picture"></div>
+                        <h2>name</h2>
+                        <button>Contact Us</button>
+                    </div>
+        
+    
+                </div>
+
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+
+            let search_btn = document.getElementById("search-btn");
+            let boxes_grp = document.getElementById("boxes_grp");
+
+            search_btn.onclick = function(){
+                if(boxes_grp.style.left != 0 + 'px'){
+                    boxes_grp.style.left = 0 + 'px';
+                    boxes_grp.style.overflow = 'visible';
+                }
+            }
+
+</script>
+</html>

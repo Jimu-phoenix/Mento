@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="r-style.css">
+</head>
+<body>
+    <div class="top">
+        <nav id="nav">
+          
+                <img src="Images/MENTO.png" alt="" class="logo">
+            
+            
+                <div class="nav-items" id="menuitems">
+                    <a href="index.html">Home</a> 
+                    <a href="/">Finder</a> 
+                    <a href="#nav" id="tab">Sign-Up</a> 
+                    <a href="/">About</a> 
+                </div>
+             
+
+
+        </nav>
+       
+        
+        <!-- --------------------sign in options------------------- -->
+        <div class="sign-box">
+
+            <!-- <form class="box">
+                <h2>LOGIN</h2>
+                
+                <div class="pass" id="name-in">
+                    <h3>Name</h3>
+                <input type="text" id="name" placeholder="Business Name">
+                </div>
+    
+    
+                <div class="pass">                
+                <h3>Password</h3>
+                <input type="password" id="password" placeholder="Password">
+                </div>
+    
+                <button class="sign-in_btn1" id="sign">Sign In</button>
+    
+                <div class="change">
+                    <button class="log_btn">Log In</button>
+                </div>
+    
+            </form> -->
+    <!-- ----------------------------------------Second Box----------------------------- -->
+     <form action="reg.php"  method="post" class="box2"  id="log_box2">
+            
+           
+              <!-- ------------left Side of sign-in box--------------------------- -->
+                
+               <div class="left">
+                <div class="left-in" id="name-in">
+                    <h3>Name</h3>
+                <input type="text" id="name" placeholder="Business Name" name = "bname">
+                </div>
+    
+                <div class="left-in">
+                    <h3>Email</h3>
+                    <input type="text" id="email" placeholder="Email" name="email">
+                </div>
+
+                <div class="left-in">
+                    <h3>Phone Number</h3>
+                    <input type="text" id="phone" placeholder="Phone Number" name="phn">
+                </div>
+               </div>
+
+               <!-- --------------right-side----------------------------------------- -->
+               
+                <div class="right">
+                    <div class="right-in">
+                        <h3>City</h3>
+                        <input type="text" id="city" placeholder="City" name="city">
+                    </div>
+
+                        <div class="right-in">
+                        <h3>Area</h3>
+                        <input type="text" id="area" placeholder="Area" name="area">
+                    </div>
+    
+                    <div class="right-in">                
+                    <h3>Password</h3>
+                    <input type="password" id="password" placeholder="Password" name="pass">
+                    </div>
+                </div>
+    
+                
+    
+                
+                   
+                    <button class="sign-in_btn"  name="sign-in">Sign In</button>
+    
+        </form>
+
+       <a href="mento-login.html">
+        <button class="log2" id="log">LogIn</button>
+       </a>
+
+        </div>
+
+
+
+        </div>
+        
+       <script>
+        let sign_button = document.getElementById("sign");
+        let log_button = document.getElementById("log");
+        let log_box2 = document.getElementById("log_box2");
+
+       sign_button.onclick = function(){
+        if(log_box2.style.top ==  60 + 'px'){
+            log_box2.style.top = -410 + 'px';
+        }
+        else{
+            log_box2.style.top =  60 + 'px';
+        }
+            
+        }
+        log_button.onclick = function(){
+            if(log_box2.style.top == 60 + 'px'){
+            log_box2.style.top = -410 + 'px';
+        }
+        else{
+            log_box2.style.top = 60 + 'px';
+        }
+        }
+
+       </script>     
+
+</body>
+</html>

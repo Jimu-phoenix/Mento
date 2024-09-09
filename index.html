@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENTO FOOD FINDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="nav-item" id="menuitem">
+        <a href="/">Home</a> 
+        <a href="/">Finder</a> 
+        <a href="/">MarketPlace</a> 
+        <a href="/">About</a>  -->
+    </div>
+    <header>
+        <nav id="navigation">
+            <div class="logo">
+                <img src="Images/MENTO.png" alt="">
+            </div>
+            
+                <div class="nav-items" id="menuitems">
+                    <a href="#navigation" id="tab">Home</a> 
+                    <a href="finder.html">Finder</a> 
+                    <a href="mento-register.html">Sign-Up</a> 
+                    <a href="/">About</a> 
+                </div>
+        </nav>
+        <section class = "front">
+            <div class="front-container">
+                
+                <div class="column-left">
+                    <img src="Images/lemon-1.png" alt="" class="lemon-1">
+                    <img src="Images/lemon-2.png" alt="" class="lemon-2">
+                    <img src="Images/lemon-3.png" alt="" class="lemon-3">
+                    <img src="Images/lemon-4.png" alt="" class="lemon-4">
+
+                    <h1 id = "hd">FIND THE BEST RESTAURANTS IN YOUR AREA</h1>
+                    <P>Enjoy the finest Cuisines <br> with MENTO</P>
+                    <a href="mento-login.html">
+                        <button class = "register" id = "btn">LOG IN</button>
+                    </a>
+                    <a href="finder.html">
+                        <button class = "finder">GO TO FINDER</button>
+                    </a>
+    
+                   
+                </div>
+                <div class="column-right">
+                    <img src="Images/food.png" alt="An image of food">
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="desc">
+            <h1>WHAT IS MENTO?</h1>
+            <h2>
+               Find the best restaurants in your area with one click of a button.
+               Click the finder button above to discover new places to enjoy your meals.
+               Click Register if you are a restaurant and want to be part of MENTO. 
+            </h2>
+        </div>
+    </section>
+    
+    <section>
+    <div class="mid">
+       <div class="mid-sides">
+        <img src="Images/find-r.png" alt="">
+        <h1>Discover restaurants</h1>
+       </div>
+       <div class="mid-sides">
+        <img src="Images/food.png" alt="">
+        <h1>Order & Book</h1>
+       </div>
+
+        
+    </div>
+    </section>
+    
+    <footer>
+
+    <div class="col1">
+        <h1>Company - VISION</h1>
+        <p>
+            Web Desgins <br>
+            Graphics <br>
+            Articles <br>
+        </p>
+
+    </div>
+
+    <div class="col2">
+        <h1>MENTO FOOD FINDER</h1>
+        <p id = "ij">
+            Sign-Up <br>
+            What Is MENTO? <br>
+            
+        </p>
+        </div>
+        
+        <div class="col3">
+            <h1>CONTACT US</h1>
+            <p>
+                Email <br>
+                Call <br>
+            </p>
+        </div>
+
+        <img src="Images/MENTO.png" alt="">
+    </footer>
+
+    <script>
+             let register = document.getElementById("btn");
+             let heading = document.getElementById("hd");
+             let menubtn = document.getElementById("menu");
+             let menu = document.getElementById("menuitem");
+            //  register.onclick = function(){
+            //     if(heading.style.color == "var(--blak-)"){
+            //         heading.style.color = "var(--grin-)";
+            //     }
+            //     else{
+            //         heading.style.color = "var(--blak-)";
+            //     }
+            //  }
+            register.onclick = function(){
+                
+            }
+             menubtn.onclick = function(){
+                if(menu.style.right == "-50%"){
+                    menu.style.right = "0";
+                }
+                else{
+                    menu.style.right = "-50%";
+                }
+             }
+    </script>
+</body>
+</html>
